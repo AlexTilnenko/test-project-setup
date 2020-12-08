@@ -1,0 +1,54 @@
+.wrapper {
+   padding: 20px;
+   margin: 0 auto;
+   max-width: 1200px;
+   width: 100%;
+   border-radius: 5px;
+   overflow: auto;
+}
+
+.user-table {
+   min-width: 950px;
+}
+
+.mx-1 {
+   margin: 0 1rem;
+}
+
+.my-1 {
+   margin: 1rem 0;
+}
+
+.popup {
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color: rgba(#000, 0.2);
+   opacity: 0;
+   visibility: hidden;
+   transition: all ease-in 0.2s;
+
+   &.active {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   &__body {
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 4px;
+      transform: translateY(50px);
+      margin: 0 auto;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+
+      span {
+         font-size: 1.2rem;
+         margin: 15px 0;
+      }
+   }
+}
