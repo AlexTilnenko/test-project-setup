@@ -113,15 +113,17 @@ function App() {
 	return (
 		<div className='App'>
 			<div className='wrapper z-depth-1'>
-				<div className='search-field'>
-					<input
-						className='search-input'
-						type='text'
-						placeholder='Введите телефон или адрес эл. почты'
-						value={searchTerm}
-						onChange={(e) => setSearchTerm(e.target.value)}
-					/>
-				</div>
+				{users.length > 0 && (
+					<div className='search-field'>
+						<input
+							className='search-input'
+							type='text'
+							placeholder='Введите телефон или адрес эл. почты'
+							value={searchTerm}
+							onChange={(e) => setSearchTerm(e.target.value)}
+						/>
+					</div>
+				)}
 				{users.length ? (
 					<table className='striped user-table'>
 						<TableHeader onChangeStatus={setUserStatus} userStatus={userStatus} />

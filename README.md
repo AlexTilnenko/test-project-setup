@@ -1,3 +1,11 @@
+Тестовое задание в компанию Setup
+
+SPA для админимтративного управления пользователями.
+Основной функционал: возможность добавления удаления и редактирования пользователей,
+возможность фильтрации по статусу пользователя, и поиск по номеру телефона и электронной почте.
+
+Stack: React(hooks), materialize(UI), formik, yup, classnames
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
