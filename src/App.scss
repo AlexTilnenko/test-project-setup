@@ -1,7 +1,11 @@
+.App {
+   padding-top: 20px;
+}
+
 .wrapper {
    padding: 20px;
    margin: 0 auto;
-   max-width: 1200px;
+   max-width: 1920px;
    width: 100%;
    border-radius: 5px;
    overflow: auto;
@@ -11,12 +15,22 @@
    min-width: 950px;
 }
 
-.mx-1 {
-   margin: 0 1rem;
+.my-1 {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
 }
 
-.my-1 {
-   margin: 1rem 0;
+.mx-1 {
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+.mt-1 {
+   margin-top: 1rem;
+}
+
+.ml-1 {
+   margin-left: 1rem;
 }
 
 .popup {
@@ -37,7 +51,7 @@
    }
 
    &__body {
-      padding: 10px;
+      padding: 20px 30px;
       background-color: #fff;
       border-radius: 4px;
       transform: translateY(50px);
@@ -51,4 +65,16 @@
          margin: 15px 0;
       }
    }
+}
+
+.search-field {
+   button {
+      display: flex;
+      align-items: center;
+   }
+}
+
+.search-input {
+   display: inline-block;
+   max-width: 400px;
 }
